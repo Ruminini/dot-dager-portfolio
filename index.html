@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dot Dager</title>
+	<link rel="stylesheet" href="style.css" />
+	<script defer src="script.js"></script>
+	<script defer src="./lib/vanilla-tilt.min.js"></script>
+	<script defer src="./lib/dot-background.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<canvas id="canvas" class="dot-background"></canvas>
+	<section id="home">
+		<div id="greeting">
+			<h1>
+				Hi! I'm <br />
+				<span id="name">Dot Dager</span> <br />
+				<div class="rotating-text">
+					<p class="word">FullStack Developer</p>
+					<p class="word">Feline Fanatic</p>
+					<p class="word">Riff Master</p>
+					<p class="word">Code Whisperer</p>
+					<p class="word">Philosophical Wanderlust</p>
+				</div>
+			</h1>
+			<img width="240" class="pickle" src="./assets/dot-dager-pickle.svg" alt="contact me pickle">
+		</div>
+		<img width="320" id="profile" src="./assets/dot-dager-profile.jpg" alt="Dot Dager Profile Picture" />
+		<a class="scroll-arrow" href="#about">
+			<svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M5 15L20 30L35 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</a>
+	</section>
+	<section id="projects" class="section">
+		<h2>Projects</h2>
+		<div class="wrapper">
+			<article class="project frosted" data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.2">
+				<img class="project-image" height="240" width="320" src="./assets/projects/StreamSync.webp"
+					alt="StreamSync Screenshot" />
+				<h3>StreamSync</h3>
+				<p>
+					A tool that syncs Twitch and YouTube chats to an OBS scene for multi-platform live streaming.
+				</p>
+				<a href="https://github.com/MarianoVilla/StreamSync" target="_blank">View Code</a>
+				<div class="technologies">
+					<span>Python</span>
+					<span>Flask</span>
+					<span>Obs-websocket</span>
+				</div>
+			</article>
+			<article class="project frosted" data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.2">
+				<img class="project-image" height="240" width="320" src="./assets/projects/TabHoarder.webp"
+					alt="TabHoarder Screenshot" />
+				<h3>The Ultimate Tab Hoarder</h3>
+				<p>
+					A Chrome extension that sarcastically congratulates you for keeping too many tabs open.
+				</p>
+				<a href="https://github.com/MarianoVilla/TabHoarder" target="_blank">View Code</a>
+				<div class="technologies">
+					<span>HTML</span>
+					<span>CSS</span>
+					<span>JavaScript</span>
+				</div>
+			</article>
+			<article class="project frosted" data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.2">
+				<img class="project-image" height="240" width="320" src="./assets/projects/CodeThermometer.webp"
+					alt="Code Thermometer Screenshot" />
+				<h3>Code Thermometer</h3>
+				<p>
+					A satirical "temperature meter" for judging overly complex or unnecessary code. ("Is your code spaghetti
+					hot?")
+				</p>
+				<a href="https://github.com/MarianoVilla/CodeThermometer" target="_blank">View Code</a>
+				<div class="technologies">
+					<span>Python</span>
+					<span>Flask</span>
+					<span>Bootstrap</span>
+				</div>
+			</article>
+			<article class="project frosted" data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.2">
+				<img class="project-image" height="240" width="320" src="./assets/projects/IfElseApocalypse.webp"
+					alt="If-Else Apocalypse Screenshot" />
+				<h3>The If-Else Apocalypse</h3>
+				<p>
+					A game that challenges players to rewrite convoluted conditional statements.
+				</p>
+				<a href="https://github.com/MarianoVilla/If-Else-Apocalypse" target="_blank">View Code</a>
+				<div class="technologies">
+					<span>HTML</span>
+					<span>CSS</span>
+					<span>JavaScript</span>
+				</div>
+			</article>
+			<article class="project frosted" data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.2">
+				<img class="project-image" height="240" width="320" src="./assets/projects/ReverseChatGPT.webp"
+					alt="Reverse ChatGPT Screenshot" />
+				<h3>Reverse ChatGPT</h3>
+				<p>
+					A tool that generates nonsensical human-like responses to confuse AI models.
+				</p>
+				<a href="https://github.com/MarianoVilla/ReverseChatGPT" target="_blank">View Code</a>
+				<div class="technologies">
+					<span>Python</span>
+					<span>Flask</span>
+					<span>Bootstrap</span>
+				</div>
+			</article>
+			<article class="new-project project frosted" data-tilt data-tilt-reverse="true" data-tilt-glare
+				data-tilt-max-glare="0.2">
+				<div class="project-image">
+					<img class="add-icon" height="240" width="320" src="./assets/plus-round-icon.svg"
+						alt="Make Your Problem My Next Project Screenshot" />
+				</div>
+				<h3>Make Your Problem My Next Project</h3>
+				<p>
+					Do you have a project idea or a problem you want to solve? Let's make it happen!
+				</p>
+				<img width="240" class="pickle" src="./assets/dot-dager-pickle.svg" alt="contact me pickle">
+			</article>
+		</div>
+	</section>
+	<section id="experience" class="section">
+		<div class="frosted">
+			<h2>Experience</h2>
+		</div>
+	</section>
+	<section id="skills" class="section">
+		<div class="frosted">
+			<h2>Skills</h2>
+		</div>
+	</section>
+	<section id="about" class="section">
+		<div id="about-text" class="frosted">
+			<h2>About Me</h2>
+			<p class="indent">
+				I'm a software developer with a solid foundation in backend
+				development and API integrations. I've worked on creating user-focused
+				applications that streamline workflows, from optimizing data entry
+				processes to automating distribution systems. I'm always looking for
+				ways to make processes simpler and more efficient.
+			</p>
+			<p class="indent">
+				I'm currently two semesters away from graduating with a five years
+				degree in Computer Science. I also completed two years in
+				electromechanical engineering and studied at a technical high school
+				in the same field.
+			</p>
+			<p class="indent">
+				Outside of development, I love tackling creative and technical
+				projects, whether it's building a 3D printer, designing custom
+				keyboards, or diving into whatever sparks my curiosity. I'm always on
+				the lookout for new challenges that combine creativity with practical
+				solutions, pushing me to grow and innovate.
+			</p>
+		</div>
+	</section>
+	<section id="contact" class="section">
+		<form id="contact-form" class="frosted">
+			<h2>Get in touch</h2>
+			<label for="name">Name</label>
+			<input type="text" id="fName" name="name" />
+			<label for="email">Email</label>
+			<input type="email" id="fEmail" name="email" />
+			<label for="message">Message</label>
+			<textarea id="fMessage" name="message"></textarea>
+			<button type="submit">Submit</button>
+		</form>
+	</section>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#000000" fill-opacity="1"
+			d="M0,96L80,106.7C160,117,320,139,480,154.7C640,171,800,181,960,170.7C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+		</path>
+	</svg>
+</body>
+
+</html>
