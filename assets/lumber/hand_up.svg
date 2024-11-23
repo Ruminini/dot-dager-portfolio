@@ -1,1 +1,47 @@
-<svg width="94px" height="104px" viewBox="0 0 94 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#825F31" x="52" y="9" width="12" height="94" rx="6"></rect><rect fill="#CE453A" x="52" y="0" width="30" height="30"></rect><rect fill="#FFFFFF" x="82" y="0" width="12" height="30"></rect><rect fill="#FEB9A0" x="3" y="73" width="64" height="24" rx="12"></rect><rect fill="#FFFFFF" x="1" y="70" width="14" height="30" rx="4"></rect><rect fill="#FEB9A0" x="49" y="38" width="18" height="24" rx="9"></rect><rect fill="#000000" x="18" y="70" width="4" height="12" rx="2"></rect><rect fill="#000000" x="26" y="70" width="4" height="12" rx="2"></rect><rect fill="#000000" x="34" y="70" width="4" height="12" rx="2"></rect></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" width="94px" height="104px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.8 100.2">
+  <defs>
+    <style>
+      .b {
+        fill: #fff;
+      }
+
+      .b,
+      .c,
+      .d,
+      .e,
+      .f {
+        fill-rule: evenodd;
+      }
+
+      .c {
+        fill: #feb9a0;
+      }
+
+      .d {
+        fill: #231f20;
+      }
+
+      .e {
+        fill: #ce453a;
+      }
+
+      .f {
+        fill: #825f31;
+      }
+    </style>
+  </defs>
+  <path class="c"
+    d="m17.2,55.7l28.3-3.3c4.7-.5,8.7,1.2,9.1,3.8h0c.3,2.7-3.2,5.3-7.9,5.8l-28.3,3.3c-4.7.5-8.7-1.2-9.1-3.8h0c-.3-2.7,3.2-5.3,7.9-5.8Z" />
+  <path class="f"
+    d="m65.6,8.4h0c2.2.5,3.3,3.5,2.6,6.7l-17.9,80c-.7,3.2-3.1,5.5-5.2,5h0c-2.2-.5-3.3-3.5-2.6-6.7L60.4,13.4c.7-3.2,3.1-5.5,5.2-5Z" />
+  <path class="e"
+    d="m47,7.9c9.5-5.2,48.4-18.5,36.6,8.7-11.8,27.2-1.7,39.4-8.3,35.1s-8-5-18.3-5.5-25.1,3.1-18.3-3.2c12.8-11.9-1.2-29.9,8.3-35.1Z" />
+  <path class="c"
+    d="m10.5,86h35.1c5.8,0,10.5,2.2,10.5,4.8h0c0,2.7-4.7,4.8-10.5,4.8H10.5c-5.8,0-10.5-2.2-10.5-4.8h0c0-2.7,4.7-4.8,10.5-4.8Z" />
+  <path class="c"
+    d="m60.1,47.2h0c2.2,0,3.9,2.3,3.9,5v3.4c0,2.8-1.7,5-3.9,5h0c-2.2,0-3.9-2.3-3.9-5v-3.4c0-2.8,1.7-5,3.9-5Z" />
+  <path class="b"
+    d="m49.2,16.3c6.2-3.6,6.2,12.8,16.1,10s6.1,21.9,1.9,19.1-5.1-3.3-11.8-3.6c-7.4-.3-16.2,2.2-11.8-2,8.3-8-.6-19.9,5.6-23.5Z" />
+  <path class="d" d="m70.6,11.9c-1.1-.2-9.5-2-10.5-1.6s-2.7,3.1-1.4,3.3,8.4,1.4,10.6,1.6,2.3-3.1,1.3-3.3Z" />
+</svg>
