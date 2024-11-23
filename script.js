@@ -88,3 +88,11 @@ let rotateText = () => {
 
 rotateText();
 setInterval(rotateText, 3500);
+
+const pickleSVGs = document.querySelectorAll(".pickle");
+const contactForm = document.getElementById("contact-form");
+pickleSVGs.forEach((svg) => {
+	svg.addEventListener("click", () => {
+		contactForm.scrollIntoView({ behavior: "smooth", block: "center" });
+	});
+});
