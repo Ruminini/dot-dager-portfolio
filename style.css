@@ -30,7 +30,7 @@ body {
 section {
 	position: relative;
 	align-self: center;
-	height: 100vh;
+	/* height: 100vh; */
 	width: 100%;
 	max-width: 1024px;
 	overflow: hidden;
@@ -152,7 +152,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	/* height: 100vh; */
 	min-height: fit-content;
 }
 
@@ -322,6 +322,7 @@ input:-webkit-autofill:active {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	overflow: visible;
 }
 
 #projects .wrapper {
@@ -392,4 +393,73 @@ input:-webkit-autofill:active {
 	background-color: #368d04aa;
 	border-radius: 70% 100% 0 0 / 70% 50% 0 0;
 	bottom: 0;
+}
+
+#about {
+	margin: 5rem 0;
+}
+
+#about-text,
+#contact-form {
+	padding: 2rem;
+}
+
+#submitButton {
+	cursor: pointer;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#submitButton:disabled {
+	background-color: #ffffff22;
+	cursor: not-allowed;
+}
+
+.loader {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 2px solid white;
+	border-top: 2px solid transparent;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.button-text,
+.checkmark {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+.checkmark {
+	font-size: 18px;
+	display: none;
+}
+
+button.loading .button-text {
+	opacity: 0;
+}
+
+button.loading .loader {
+	opacity: 1;
+}
+
+button.sent .loader {
+	opacity: 0;
+}
+
+button.sent .checkmark {
+	display: block;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
 }

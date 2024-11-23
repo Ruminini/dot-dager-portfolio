@@ -1,4 +1,5 @@
 const form = document.getElementById("contact-form");
+const button = document.getElementById("submitButton");
 const fName = document.getElementById("fName");
 const fEmail = document.getElementById("fEmail");
 const fMessage = document.getElementById("fMessage");
@@ -12,12 +13,21 @@ form.addEventListener("submit", (e) => {
 	} else if (fMessage.value === "") {
 		errorField(fMessage);
 	} else {
-		const url = `https://docs.google.com/forms/d/e/1FAIpQLSdJmv7jU49t4FcWpbdjcycWiGO0sx9xPji1Q8s8QfLva4yc6w/formResponse?submit=Submit&usp=pp_url&entry.1137438515=${fName.value}&entry.32220053=${fEmail.value}&entry.1023053542=${fMessage.value}`;
-		window.open(url, "_blank").focus();
+		button.classList.add("loading");
+		button.disabled = true;
 
-		fName.value = "";
-		fEmail.value = "";
-		fMessage.value = "";
+		setTimeout(() => {
+			button.classList.remove("loading");
+			button.classList.add("sent");
+			setTimeout(() => {
+				button.classList.remove("sent");
+				button.disabled = false;
+
+				fName.value = "";
+				fEmail.value = "";
+				fMessage.value = "";
+			}, 3000);
+		}, 2000);
 	}
 });
 
@@ -78,11 +88,3 @@ let rotateText = () => {
 
 rotateText();
 setInterval(rotateText, 3500);
-
-// VanillaTilt.init(document.querySelector(".your-element"), {
-// 	max: 25,
-// 	speed: 400,
-// });
-
-//It also supports NodeList
-// VanillaTilt.init(document.querySelectorAll(".project"));

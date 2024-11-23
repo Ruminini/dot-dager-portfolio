@@ -128,38 +128,18 @@
 			</article>
 		</div>
 	</section>
-	<section id="experience" class="section">
-		<div class="frosted">
-			<h2>Experience</h2>
-		</div>
-	</section>
-	<section id="skills" class="section">
-		<div class="frosted">
-			<h2>Skills</h2>
-		</div>
-	</section>
 	<section id="about" class="section">
 		<div id="about-text" class="frosted">
 			<h2>About Me</h2>
 			<p class="indent">
-				I'm a software developer with a solid foundation in backend
-				development and API integrations. I've worked on creating user-focused
-				applications that streamline workflows, from optimizing data entry
-				processes to automating distribution systems. I'm always looking for
-				ways to make processes simpler and more efficient.
+				Hi, I'm Mariano Villa, aka Dot Dager, a software developer with 8+ years of experience in full-stack
+				development. As a Lead Developer at the University of Nebraska-Lincoln, I specialize in .NET, Java, AWS, and
+				system design, leading teams to create scalable solutions.
 			</p>
 			<p class="indent">
-				I'm currently two semesters away from graduating with a five years
-				degree in Computer Science. I also completed two years in
-				electromechanical engineering and studied at a technical high school
-				in the same field.
-			</p>
-			<p class="indent">
-				Outside of development, I love tackling creative and technical
-				projects, whether it's building a 3D printer, designing custom
-				keyboards, or diving into whatever sparks my curiosity. I'm always on
-				the lookout for new challenges that combine creativity with practical
-				solutions, pushing me to grow and innovate.
+				I'm also a Freelance Developer, building custom apps, APIs, and microservices while optimizing processes for
+				global clients. With a strong background in IT support and a passion for problem-solving, I thrive on turning
+				complex challenges into elegant solutions.
 			</p>
 		</div>
 	</section>
@@ -172,7 +152,11 @@
 			<input type="email" id="fEmail" name="email" />
 			<label for="message">Message</label>
 			<textarea id="fMessage" name="message"></textarea>
-			<button type="submit">Submit</button>
+			<button id="submitButton" type="submit">
+				<span class="button-text">Submit</span>
+				<span class="loader"></span>
+				<span class="checkmark">✔</span>
+			</button>
 		</form>
 	</section>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -180,7 +164,7 @@
 			d="M0,96L80,106.7C160,117,320,139,480,154.7C640,171,800,181,960,170.7C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
 		</path>
 	</svg>
-	<canvas id="gameCanvas" width="600" height="900"></canvas>
+	<canvas id="gameCanvas" width="600" height="1300"></canvas>
 	<script src="lib/rumi-lumberjack.js"></script>
 	<div id="footer-bg"></div>
 </body>
